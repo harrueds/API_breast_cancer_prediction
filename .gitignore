@@ -1,0 +1,53 @@
+# Python cache / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual envs (incluye entornos creados dentro del proyecto)
+env/
+venv/
+.venv/
+ENV/
+envs/
+
+# Conda-specific (si generaste archivos/dirs locales)
+conda-env/
+conda-meta/
+*.conda
+
+# VSCode (si no querés subir tu configuración local)
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / temporales
+*.log
+*.tmp
+tmp/
+cache/
+
+# Secrets / local config
+.env
+secrets.json
+*.secret
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+pip-selfcheck.json
+
+# Databases / sqlite
+*.sqlite3
+*.db
+
+# Test/coverage
+.pytest_cache/
+.coverage
+htmlcov/

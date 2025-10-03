@@ -1,0 +1,78 @@
+# .github/workflows/ci-cd.yml
+name: CI/CD — API de Cáncer de Mama
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build-and-test:
+    name: Construir imagen y ejecutar pruebas
+    runs-on: ubuntu-latest
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Instalar dependencias de Python (host)
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Construir imagen Docker (etiqueta CI)
+        run: |
+          docker build -t henzo_arrue_mod10:ci .
+
+      - name: Ejecutar contenedor en segundo plano (puerto 5000)
+        run: |
+          docker run -d --name api_test -p 5000:5000 henzo_arrue_mod10:ci
+
+      - name: Esperar a que la API esté lista
+        run: |
+          set -e
+          for i in $(seq 1 10); do
+            if curl -sSf http://127.0.0.1:5000/ >/dev/null 2>&1; then
+              echo "API está arriba"
+              break
+            fi
+            echo "Esperando API... intento $i/10"
+            sleep 3
+          done
+
+      - name: Ejecutar pruebas (test_app.py)
+        run: |
+          python test_app.py
+
+      - name: Detener y eliminar contenedor (siempre)
+        if: always()
+        run: |
+          docker stop api_test || true
+          docker rm api_test || true
+
+  docker-push:
+    name: Construir y subir imagen Docker (Docker Hub)
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Obtener repositorio
+        uses: actions/checkout@v4
+
+      - name: Iniciar sesión en Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Construir y subir imagen a Docker Hub
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/henzo_arrue_mod10:latest
