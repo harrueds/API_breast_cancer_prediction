@@ -106,3 +106,9 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 - **Email:** [henzoarrue@gmail.com](mailto:henzoarrue@gmail.com)
 - **LinkedIn:** [https://www.linkedin.com/in/henzo-arrue/](https://www.linkedin.com/in/henzo-arru%C3%A9-mu%C3%B1oz/)
 - **GitHub:** [https://github.com/harrueds](https://github.com/harrueds)
+
+### Autor
+
+- **Nombre:** Henzo Arrué Muñoz
+- **Fecha:** 2025-10-03
+- **Version:** 1.0.0
