@@ -53,7 +53,7 @@ asegurando así la validez del proceso de despliegue del modelo.
 # Paquetes necesarios
 # pip install requests
 
-import request
+import requests
 import json
 import logging
 
