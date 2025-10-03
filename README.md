@@ -107,6 +107,8 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 - **LinkedIn:** [https://www.linkedin.com/in/henzo-arrue/](https://www.linkedin.com/in/henzo-arru%C3%A9-mu%C3%B1oz/)
 - **GitHub:** [https://github.com/harrueds](https://github.com/harrueds)
 
+---
+
 ### Autor
 
 - **Nombre:** Henzo Arrué Muñoz
