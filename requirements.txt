@@ -3,4 +3,4 @@ joblib
 numpy
 scikit-learn
 pandas
-request
+requests
