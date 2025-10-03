@@ -114,3 +114,5 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 - **Nombre:** Henzo Arrué Muñoz
 - **Fecha:** 2025-10-03
 - **Version:** 1.0.0
+- 
+[![CI/CD — API de Cáncer de Mama](https://github.com/harrueds/modular10/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/harrueds/modular10/actions/workflows/ci-cd.yml)
