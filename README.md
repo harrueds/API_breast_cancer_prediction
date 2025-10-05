@@ -17,7 +17,7 @@ La solución está diseñada con un **enfoque académico y profesional**, integr
 ## Estructura del proyecto
 
 ```bash
-/modular/   # Directorio principal del proyecto
+/API_breast_cancer_prediction/   # Directorio principal del proyecto
 ├── training.py # Script de entrenamiento y guardado del modelo
 ├── app.py # API REST con Flask para exponer el modelo
 ├── test_app.py # Script de pruebas unitarias y de integración
@@ -104,7 +104,7 @@ El proyecto representa un caso de estudio en la integración de Machine Learning
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
 - **Email:** [henzoarrue@gmail.com](mailto:henzoarrue@gmail.com)
-- **LinkedIn:** [https://www.linkedin.com/in/henzo-arrue/](https://www.linkedin.com/in/henzo-arru%C3%A9-mu%C3%B1oz/)
+- **LinkedIn:** [https://www.linkedin.com/in/henzo-arrué-muñoz/](https://www.linkedin.com/in/henzo-arru%C3%A9-mu%C3%B1oz/)
 - **GitHub:** [https://github.com/harrueds](https://github.com/harrueds)
 
 ---
@@ -114,5 +114,5 @@ Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 - **Nombre:** Henzo Arrué Muñoz
 - **Fecha:** 2025-10-03
 - **Version:** 1.0.0
-- 
+
 [![CI/CD — API de Cáncer de Mama](https://github.com/harrueds/modular10/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/harrueds/modular10/actions/workflows/ci-cd.yml)
