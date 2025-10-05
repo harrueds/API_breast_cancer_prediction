@@ -1,4 +1,4 @@
-# API REST para Predicción de Cáncer de Mama
+# API REST para Predicción de [Cáncer de Mama](https://www.breastcancer.org/es)
 
 Este proyecto implementa una **API REST en Python con Flask** para predecir la probabilidad de cáncer de mama a partir de parámetros numéricos.  
 La solución está diseñada con un **enfoque académico y profesional**, integrando metodologías de *Machine Learning*, contenedorización con **Docker**, y despliegue automatizado mediante **GitHub Actions (CI/CD)**.
