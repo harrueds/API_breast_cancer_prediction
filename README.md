@@ -1,6 +1,15 @@
+## Legacy Project
+
+This repository contains an early version of the Breast Cancer Prediction API.
+It is kept for historical and educational purposes.
+
+The actively maintained and improved version is available here:
+https://github.com/harrueds/Breast-Cancer-API
+
+
 # API REST para Predicción de [Cáncer de Mama](https://www.breastcancer.org/es)
 
-Este proyecto implementa una **API REST en Python con Flask** para predecir la probabilidad de cáncer de mama a partir de parámetros numéricos.  
+Este proyecto implementa una **API REST en Python con Flask** para predecir la probabilidad de cáncer de mama a partir de parámetros numéricos.
 La solución está diseñada con un **enfoque académico y profesional**, integrando metodologías de *Machine Learning*, contenedorización con **Docker**, y despliegue automatizado mediante **GitHub Actions (CI/CD)**.
 
 ---
@@ -103,7 +112,7 @@ El proyecto representa un caso de estudio en la integración de Machine Learning
 
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
-- **Email:** [henzoarrue@gmail.com](mailto:henzoarrue@gmail.com)
+- **Email:** [harrue.ds@gmail.com](mailto:harrue.ds@gmail.com)
 - **LinkedIn:** [https://www.linkedin.com/in/henzo-arrué-muñoz/](https://www.linkedin.com/in/henzo-arru%C3%A9-mu%C3%B1oz/)
 - **GitHub:** [https://github.com/harrueds](https://github.com/harrueds)
 
